@@ -1,0 +1,209 @@
+/* apply a natural box layout model to all elements */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* General */
+
+body {
+  background-color: white;
+  color: #424242;
+}
+
+
+.container {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3.0em 150px;
+}
+
+img {
+  width: 50%;
+}
+
+/* Utilities */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0;
+}
+
+.no-break {
+  white-space: nowrap;
+}
+
+/* Typography */
+
+/* https://fonts.google.com/
+Merriweather - light - headlines
+Montserrat - light, normal - body copy */
+
+h1, h2, h3 {
+  font-family:'Martel Sans','Arial', sans-serif;
+  color: #FEDE02;
+}
+
+h4{
+  color:#616161;
+
+}
+p, li, figcaption {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 100;
+  color: gray;
+  padding-bottom:0.8em;
+}
+
+
+h2 {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+h2+p {
+  margin-top: 0.5em;
+}
+
+.tagline {
+  margin: 0.5em 0 2.0em;
+  font-size: 14px;
+}
+
+/* Links */
+
+a:link, a:visited {
+  color: #D29700;
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  color: #ed344a;
+}
+
+/* Buttons */
+
+
+/* Navigation */
+
+
+
+/*
+INDEX about
+*/
+
+#about .container{
+  color: gray;
+  font-family: "Arial", sans-serif;
+}
+.about .content{
+  text-align: left;
+  padding-right: 10px;
+}
+
+.about img{
+  width:50%;
+}
+
+/*
+footer
+*/
+footer .socialMedia{
+  background-color: #FEDE02;
+  color:white;
+  display:flex;
+  justify-content: center;
+  padding-bottom: 7em;
+  padding-top:1em;
+}
+footer .socialMedia a:hover{
+  color:#D29700;
+}
+/* MEDIA QUERIES */
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 0) {
+  h1, h2 {
+    font-size: 24px;
+  }
+
+  p, p.tagline, figcaption, h4 {
+    font-size: 14px;
+  }
+  nav li a {
+    font-size: 14px;
+  }
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+  h1, h2 {
+    margin-top: 40px;
+    font-size: 40px;
+  }
+  p, p.tagline, figcaption, h4 {
+    font-size: 14px;
+  }
+  .game h2{font-size:60px;}
+  iframe{
+    width:90%;
+    height:430px;
+  }
+
+  .about .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+  h1, h2 {
+    margin-top: 40px;
+    font-size: 44px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p, p.tagline, figcaption, h4 {
+    font-size: 18px;
+  }
+  nav li a {
+    font-size: 16px;
+  }
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+h1, h2 {
+  margin-top: 40px;
+  font-size: 44px;
+}
+h3 {
+  font-size: 20px;
+}
+p, p.tagline, figcaption, h4 {
+  font-size: 18px;
+}
+nav li a {
+  font-size: 16px;
+}
